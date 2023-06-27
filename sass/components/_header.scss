@@ -1,0 +1,97 @@
+.header {
+    border-bottom: 1px solid #ececec;
+
+    &_space {
+        display: flex;
+        flex-direction: row;
+    }
+}
+.logo {
+    font-family: $secondary-font;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    margin: 25px;
+    margin-right: 93px;
+    margin-left: 0;
+
+    &_color1 {
+        color: $brand-color;
+    }
+    &_color2 {
+        color: #000;
+    }
+}
+.navigations {
+    list-style-type: none;
+    margin: 32px 371px 32px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 46px;
+    padding: 0px;
+    margin-right: 345px;
+
+    &_link {
+        color: $main-text-color;
+        font-weight: 500;
+        line-height: 1.14;
+        text-decoration: none;
+        letter-spacing: 0.02em;
+        transition: $main-transition;
+
+        &:hover,
+        &:focus {
+            color: $brand-color;
+        }
+    }
+    &_underline {
+        position: relative;
+        top: 30px;
+    }
+    &_underline::after {
+        content:"";
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-radius: 2px;
+        width: 53px;
+        height: 4px;
+        background-color: $brand-color;
+    }
+}
+.contacts {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+
+    &_item {
+        color: $secondary-text-color;
+        font-weight: 500;
+        line-height: 1.14;
+        text-decoration: none;
+        width: 161px;
+        height: 16px;
+        display: flex;
+        align-items: center;
+        transition: $main-transition;
+
+        &:hover,
+        &:focus {
+            color: $brand-color;
+        }
+    }
+    &_icon {
+        margin-right: 10px;
+        fill: currentColor;
+
+        &:hover {
+            fill: $brand-color;
+        }
+    }
+}

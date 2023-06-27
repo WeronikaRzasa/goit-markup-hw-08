@@ -1,0 +1,35 @@
+.lorem-ipsum {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0;
+
+    &_name {
+        font-weight: 700;
+        line-height: 1.14;
+        text-transform: uppercase;
+    }
+
+    &_text {
+        margin-top: 10px;
+    margin-bottom: 0px;
+    line-height: 1.71;
+    color: $secondary-text-color;
+    }
+
+    &_icon {
+        margin: 25px 100px;
+    }
+
+    &_item {
+        background-color: #F5F4FA;
+        width: 270px;
+        height: 120px;
+        margin-bottom: 30px;  
+    }
+}

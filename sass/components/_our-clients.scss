@@ -1,0 +1,42 @@
+.our-clients {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: row;
+    gap: 30px;
+    padding: 0;
+    margin: 0 auto;
+    width: 1170px;
+
+    &_item {
+        width: 170px;
+	    height: 92px;
+	    border: 1px solid currentColor;
+	    color: #afb1b8;
+	    fill: currentColor;
+	    border-radius: 4px;
+	    text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: $main-transition;
+
+        &:hover,
+        &:focus {
+            color: $brand-color;
+            cursor: pointer;
+        }
+
+        &:hover > .our-clients_icon,
+        &:focus  > .our-clients_icon {
+            color: $brand-color;
+            cursor: pointer;
+        }
+    }
+    &_icon {
+        fill: currentColor;
+        color: #AFB1B8;
+        transition: $main-transition;
+    }
+}
