@@ -4,13 +4,14 @@
   box-sizing: border-box;
 }
 body {
+  display: none;
         font-family: "Roboto", sans-serif;
         color: #212121;
         font-size: 14px;
         width: 1600px;
     }
 .container {
-      width: 1200px;
+      width: 480px;
       margin: 0 auto;
   }
 .section {

@@ -1,13 +1,14 @@
 @import 'utils/vars';
+@import 'utils/mixins';
 @import 'components/body';
 @import 'components/header';
-@import 'components/first-section';
+@import 'components/business-solutions';
 @import 'components/modal';
-@import 'components/second-section';
-@import 'components/third-section';
-@import 'components/fourth-section';
-@import 'components/fifth-section';
-@import 'components/portfolio-first-section';
-@import 'components/portfolio-second-section';
+@import 'components/lorem-ipsum';
+@import 'components/what-do-we-do';
+@import 'components/our-team';
+@import 'components/our-clients';
+@import 'components/portfolio-buttons';
+@import 'components/portfolio-images';
 @import 'components/footer';
 
