@@ -203,4 +203,9 @@ style="fill:var(--color1, #2196f3)"/>
 stroke-width=".427" d="m8.442 16.537-.147-.14-2.205 2.088 7.767 7.41 16.318-15.567-2.19-2.089-14.128 13.465-5.416-5.167z" style="fill:var(--color2, #fff);stroke:var(--color2, #fff)"/>
 </symbol>
 
+<symbol id="icon-menu" viewBox="0 0 48 32">
+<path
+ d="M0 5.333V0h48v5.333H0zm0 13.334h48v-5.333H0v5.333zM0 32h48v-5.333H0V32z"/>
+</symbol>
+
 </defs></svg>

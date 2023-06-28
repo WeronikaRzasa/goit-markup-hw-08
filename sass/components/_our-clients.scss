@@ -1,17 +1,17 @@
 .our-clients {
-    display: none;
     display: flex;
     list-style-type: none;
-    justify-content: space-between;
+    justify-content: center;
     align-content: center;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 30px;
     padding: 0;
     margin: 0 auto;
-    width: 1170px;
+    width: 450px;
 
     &_item {
-        width: 170px;
+        width: 210px;
 	    height: 92px;
 	    border: 1px solid currentColor;
 	    color: #afb1b8;
@@ -35,9 +35,31 @@
             cursor: pointer;
         }
     }
+    @include tablet {
+        .our-clients_item {
+            width: 226px;
+        }
+    }
+    @include desktop {
+        .our-clients_item {
+            width: 170px;
+        }
+    }
     &_icon {
         fill: currentColor;
         color: #AFB1B8;
         transition: $main-transition;
+    }
+}
+@include tablet {
+    .our-clients {
+        justify-content: space-between;
+        width: 768px;
+    }
+}
+@include desktop {
+    .our-clients {
+        justify-content: space-between;
+        width: 1170px;
     }
 }

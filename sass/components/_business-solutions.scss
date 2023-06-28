@@ -1,26 +1,42 @@
 .solutions {
-    display: none;
     background-color: #2F303A;
+    background: center;
     background-image:
     linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
         ),
-        url(/goit-markup-hw-04/images/Agencja/main-index-background.jpg.jpg);
+        url(/goit-markup-hw-08/images/Agencja/main-index-background.jpg);
 
     &_text {
         font-weight: 900;
-        font-size: 44px;
+        font-size: 26px;
         line-height: 1.36;
         color: $negative-color;
         letter-spacing: 0.06em;
-        max-width: 696px;
+        max-width: 365px;
         margin: 0 auto;
         padding-top: 106px;
         padding-bottom: 30px;
         text-align: center;
+        letter-spacing: 1.5px;
     }
 }
+@include tablet {
+    .solutions_text {
+        max-width: 365px;
+        font-size: 26px;
+        letter-spacing: 1.5px;
+    }
+}
+@include desktop {
+    .solutions_text {
+        max-width: 696px;
+        font-size: 44px;
+        letter-spacing: 2.64px;
+    }
+}
+
 .service {
     text-align: center;
 
@@ -42,4 +58,18 @@
             scale: 1.05;
         }
     }
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .solutions {
+    background-color: #2F303A;
+    background: center;
+    background-image:
+    linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+        ),
+        url(/goit-markup-hw-08/images/Agencja/main-index-background@2x.jpg);
+  }
 }

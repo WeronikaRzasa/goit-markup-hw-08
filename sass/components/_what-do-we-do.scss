@@ -1,6 +1,10 @@
 .what-do-we-do {
-    display: none;
     padding-bottom: 94px;
+}
+@media(max-width: 1200px) {
+    .what-do-we-do {
+        display: none;
+    }
 }
 .activities {
     list-style-type: none;

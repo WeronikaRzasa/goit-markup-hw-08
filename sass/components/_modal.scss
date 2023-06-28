@@ -1,5 +1,4 @@
 .modal {
-    display: none;
     position: fixed;
     left: 0;
     top: 0;
@@ -12,18 +11,25 @@
     transition-timing-function: $main-transition-timing-function;
 
     &_window {
-        width: 528px;
-        height: 581px;
+        width: 450px;
+        height: 609px;
         display: block;
         background-color: $negative-color;
         border-radius: 4px;
         z-index: 3;
         position: absolute;
-        top: 219px;
-        left: 544px;
+        top: 93px;
+        left: 15px;
         box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     }
-
+@include desktop {
+    .modal_window {
+        width: 528px;
+        height: 581px;
+        top: 221px;
+        left: 519.6px;
+    }
+}
     &_button {
         width: 30px;
         height: 30px;

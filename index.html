@@ -23,7 +23,19 @@
         <div class="container">
             <div class="header_space">
             <a class="logo" href="index.html"><span class="logo_color1">Web</span><span class="logo_color2">Studio</span></a>
-                <nav>
+                
+            <button
+            type="button"
+            class="header_button js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+        >
+                <svg class="menu-opener_button" width="24px" height="16px">
+                    <use href="./images/icons.svg#icon-menu"></use>
+                </svg>
+            </button>
+            
+            <nav>
                     <menu class="navigations">
                      <li><a class="navigations_link" href="index.html">Agencja</a>
                         <div class="navigations_underline"></div></li>
@@ -144,8 +156,9 @@
     
 <section class="section">
     <div class="container">
-<ul class="lorem-ipsum" >
-<li>
+<ul class="lorem-ipsum"
+>
+<li class="lorem-ipsum_element">
     <div class="lorem-ipsum_item">
         <svg class="lorem-ipsum_icon" width="70px" height="70px">
         <use href="./images/icons.svg#icon-antenna-1"></use>
@@ -154,7 +167,7 @@
     <p class="lorem-ipsum_name">lorem ipsum</p>
     <p class="lorem-ipsum_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada</p></li>
     
-<li>
+<li class="lorem-ipsum_element">
     <div class="lorem-ipsum_item">
         <svg class="lorem-ipsum_icon" width="70px" height="70px">
         <use href="./images/icons.svg#icon-clock-1"></use>
@@ -163,7 +176,7 @@
     <p class="lorem-ipsum_name">lorem ipsum</p>
     <p class="lorem-ipsum_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada</p></li>
     
-<li>
+<li class="lorem-ipsum_element">
     <div class="lorem-ipsum_item">
         <svg class="lorem-ipsum_icon" width="70px" height="70px">
         <use href="./images/icons.svg#icon-diagram-1"></use>
@@ -172,7 +185,7 @@
     <p class="lorem-ipsum_name">lorem ipsum</p>
     <p class="lorem-ipsum_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada</p></li>
        
-<li>
+<li class="lorem-ipsum_element">
     <div class="lorem-ipsum_item">
         <svg class="lorem-ipsum_icon" width="70px" height="70px">
         <use href="./images/icons.svg#icon-astronaut-1"></use>
@@ -222,10 +235,22 @@
 <ul class="team">
     <li class="team_item">
         <figure class="team_element">
-            <img src="./images/Agencja/img4.jpg"
-                width="270"
-                height="260"
-                alt="pan w okularach">
+            <picture>
+                <img src= "./images/Agencja/img4.jpg"
+                    alt="pan w okularach"/>
+                <source 
+                    srcset="./images/Agencja/img4.jpg 1x"
+                    srcset="./images/Agencja/img4@2x.jpg 2x"
+                    media="(min-width:480px)"/>
+                <source 
+                    srcset="./images/Agencja/img4.jpg 1x"
+                    srcset="./images/Agencja/img4@2x.jpg 2x"
+                    media="(min-width:786px)"/>
+                <source 
+                    srcset="./images/Agencja/img4.jpg 1x"
+                    srcset="./images/Agencja/img4@2x.jpg 2x"
+                    media="(min-width:1200px)"/>
+            </picture>
     <figcaption class="team_description">
         <p class="team_name">John Doe</p>
         <p class="team_text">Product Designer</p>
@@ -257,10 +282,22 @@
 
    <li class="team_item">
         <figure class="team_element">
-            <img src="./images/Agencja/img5.jpg"
-                width="270"
-                height="260"
-                alt="pani w okularach">
+            <picture>
+                <img src= "./images/Agencja/img5.jpg"
+                    alt="pani w okularach"/>
+                <source 
+                    srcset="./images/Agencja/img5.jpg 1x"
+                    srcset="./images/Agencja/img5@2x.jpg 2x"
+                    media="(min-width:480px)"/>
+                <source 
+                    srcset="./images/Agencja/img5.jpg 1x"
+                    srcset="./images/Agencja/img5@2x.jpg 2x"
+                    media="(min-width:786px)"/>
+                <source 
+                    srcset="./images/Agencja/img5.jpg 1x"
+                    srcset="./images/Agencja/img5@2x.jpg 2x"
+                    media="(min-width:1200px)"/>
+            </picture>
     <figcaption class="team_description">
         <p class="team_name">John Doe</p>
     <p class="team_text">Frontend Developer</p>
@@ -292,11 +329,23 @@
 
     <li class="team_item">
         <figure class="team_element">
-            <img src="./images/Agencja/img6.jpg"
-                width="270"
-                height="260"
-                alt="uśmiechający się pan">
-   <figcaption class="team_description">
+            <picture>
+                <img src= "./images/Agencja/img6.jpg"
+                    alt="uśmiechający się pan"/>
+                <source 
+                    srcset="./images/Agencja/img6.jpg 1x"
+                    srcset="./images/Agencja/img6@2x.jpg 2x"
+                    media="(min-width:480px)"/>
+                <source 
+                    srcset="./images/Agencja/img6.jpg 1x"
+                    srcset="./images/Agencja/img6@2x.jpg 2x"
+                    media="(min-width:786px)"/>
+                <source 
+                    srcset="./images/Agencja/img6.jpg 1x"
+                    srcset="./images/Agencja/img6@2x.jpg 2x"
+                    media="(min-width:1200px)"/>
+            </picture>
+    <figcaption class="team_description">
     <p class="team_name">John Doe</p>
     <p class="team_text">Marketing</p>
     <ul class="social-links">
@@ -327,10 +376,23 @@
 
     <li class="team_item">
         <figure class="team_element">
-            <img src="./images/Agencja/img7.jpg"
-                width="270"
-                height="260"
-                alt="pan w czarnych okularach">
+            <picture>
+                <img src= "./images/Agencja/img7.jpg"
+                    alt="pan w czarnych okularach"/>
+                <source 
+                    srcset="./images/Agencja/img7.jpg 1x"
+                    srcset="./images/Agencja/img7@2x.jpg 2x"
+                    media="(min-width:480px)"/>
+                <source 
+                    srcset="./images/Agencja/img7.jpg 1x"
+                    srcset="./images/Agencja/img7@2x.jpg 2x"
+                    media="(min-width:786px)"/>
+                <source 
+                    srcset="./images/Agencja/img7.jpg 1x"
+                    srcset="./images/Agencja/img7@2x.jpg 2x"
+                    media="(min-width:1200px)"/>
+            </picture>
+
    <figcaption class="team_description">
     <p class="team_name">John Doe</p>
     <p class="team_text">UI Designer</p>

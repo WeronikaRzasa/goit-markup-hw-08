@@ -1,36 +1,81 @@
 .lorem-ipsum {
-    display: none;
     list-style-type: none;
+    flex-direction: column;
     display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: space-between;
     gap: 30px;
-    max-width: 1170px;
+    max-width: 450px;
     margin: 0 auto;
     padding: 0;
 
+    &_element {
+        max-width: 450px;
+    }
     &_name {
         font-weight: 700;
         line-height: 1.14;
         text-transform: uppercase;
+        text-align: center;
     }
 
     &_text {
         margin-top: 10px;
-    margin-bottom: 0px;
-    line-height: 1.71;
-    color: $secondary-text-color;
+        margin-bottom: 0px;
+        line-height: 1.71;
+        color: $secondary-text-color;
     }
 
     &_icon {
-        margin: 25px 100px;
+        margin: 25px 190px;
+    }
+    @include tablet {
+        .lorem-ipsum_icon {
+            margin: 25px 142px;
+        }
+    }
+    @include desktop {
+        .lorem-ipsum_icon {
+            margin: 25px 100px;
+        }
     }
 
     &_item {
         background-color: #F5F4FA;
-        width: 270px;
+        width: 450px;
         height: 120px;
         margin-bottom: 30px;  
+    }
+    @include tablet {
+        .lorem-ipsum_item {
+            width: 354px;
+        }
+    }
+    @include desktop {
+        .lorem-ipsum_item {
+            width: 270px;
+        }
+    }
+}
+@include tablet {
+    .lorem-ipsum {
+        flex-direction:row;
+        flex-wrap: wrap;
+        align-items: center;
+        max-width: 768px;
+        justify-content: center;
+    }
+}
+@include desktop {
+    .lorem-ipsum {
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-items: center;
+        max-width: 1170px;
+    }
+}
+
+@include tablet {
+    .lorem-ipsum_element {
+        max-width: 354px;
     }
 }

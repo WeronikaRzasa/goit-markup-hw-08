@@ -1,10 +1,18 @@
 .header {
-    display: none;
     border-bottom: 1px solid #ececec;
 
     &_space {
         display: flex;
         flex-direction: row;
+    }
+    &_button {
+        background-color: transparent;
+        border: none;
+    }
+}
+@include tablet {
+    .header_button {
+        display:none;
     }
 }
 .logo {
@@ -15,8 +23,7 @@
     text-decoration: none;
     letter-spacing: 0.03em;
     margin: 25px;
-    margin-right: 93px;
-    margin-left: 0;
+    margin-left: 15px;
 
     &_color1 {
         color: $brand-color;
@@ -26,15 +33,7 @@
     }
 }
 .navigations {
-    list-style-type: none;
-    margin: 32px 371px 32px 0px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: 46px;
-    padding: 0px;
-    margin-right: 345px;
+    display: none;
 
     &_link {
         color: $main-text-color;
@@ -64,12 +63,35 @@
         background-color: $brand-color;
     }
 }
+@include tablet {
+    .navigations {
+        display:contents;
+        list-style-type: none;
+        margin: 32px 0px 32px 58px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 46px;
+        padding: 0px;
+    }
+}
+@include desktop {
+    .navigations {
+        display:contents;
+        list-style-type: none;
+        margin: 32px 371px 32px 68px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 46px;
+        padding: 0px;
+    }
+}
+
 .contacts {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: 50px;
+    display: none;
 
     &_item {
         color: $secondary-text-color;
@@ -96,3 +118,26 @@
         }
     }
 }
+@include tablet {
+    .contacts {
+        display: contents;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-left: 100px;
+    }
+}
+@include desktop {
+    .contacts {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 50px;
+        margin-left: 0;
+
+    }
+}
+
