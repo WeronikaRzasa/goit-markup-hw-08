@@ -11,23 +11,26 @@
     transition-timing-function: $main-transition-timing-function;
 
     &_window {
-        width: 450px;
-        height: 609px;
+        width: 350px;
+        height: 581px;
         display: block;
         background-color: $negative-color;
         border-radius: 4px;
         z-index: 3;
         position: absolute;
-        top: 93px;
-        left: 15px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+        @media screen and (width >= 450px) {
+            width: 450px;
+        }
     }
 @include desktop {
     .modal_window {
         width: 528px;
         height: 581px;
-        top: 221px;
-        left: 519.6px;
     }
 }
     &_button {
@@ -60,10 +63,18 @@
     }
 
     &_form {
-        width: 448px;
+        width: 300px;
         display: flex;
         flex-direction: column;
         margin: auto;
+
+        @media screen and (width >= 450px) {
+            width: 370px;
+          }
+      
+          @include desktop {
+            width: 448px;
+          }
     }
 
     &_text {
@@ -130,10 +141,19 @@
         border-color: rgba(33, 33, 33, 0.2);
         border-width: 1px;
         height: 120px;
+        width: 300px;
         padding: 12px 16px;
         margin-bottom: 10px;
         margin-top: 4px;
         resize: none;
+
+        @media screen and (width >= 450px) {
+            width: 370px;
+          }
+      
+          @include desktop {
+            width: 450px;
+          }
 
         &::placeholder {
             font-size: 12px;
@@ -145,14 +165,20 @@
 
     &_checkbox {
         font-weight: 400;
-        font-size: 14px;
+        font-size: 12px;
         line-height: 1.71;
         letter-spacing: 0.03em;
         color: rgba(117, 117, 117, 1);
         position: relative;
         display: flex;
         align-items: center;
-        margin-left: 15px;
+        margin-left: 8px;
+    }
+    @include desktop {
+        .modal_checkbox {
+            font-size: 14px;
+            margin-left: 15px;
+        }
     }
 
     &_checkbox-text {
@@ -209,13 +235,22 @@
         margin: auto;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
         cursor: pointer;
-        margin-top: 20px;
+        margin: 20px 50px 40px;
+
+        @media screen and (width >= 450px) {
+            margin: 30px 85px 40px;
+          }
+      
+          @include desktop {
+            margin: 30px 124px 40px;
+          }
 
         &:hover,
         &:focus {
             scale: 1.05;
         }
     }
+    
 }
 
 .is-hidden {

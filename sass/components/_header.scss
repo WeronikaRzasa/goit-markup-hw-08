@@ -4,15 +4,7 @@
     &_space {
         display: flex;
         flex-direction: row;
-    }
-    &_button {
-        background-color: transparent;
-        border: none;
-    }
-}
-@include tablet {
-    .header_button {
-        display:none;
+        justify-content: space-between;
     }
 }
 .logo {
